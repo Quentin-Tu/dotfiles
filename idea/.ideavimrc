@@ -7,12 +7,6 @@ set easymotion
 let mapleader = " "
 map Q gq
 "Line movement
-nnoremap <A-Down> :m+<CR>
-nnoremap <A-Up> :m-2<CR>
-inoremap <A-Up> <Esc>:m-2<CR>
-inoremap <A-Down> <Esc>:m+<CR>
-vnoremap <A-Up> :<C-u>silent! '<,'>move-2<CR>gv=gv 
-vnoremap <A-Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv
 " Select all
 nmap <leader>all gg<S-v>G
 " Better tabbing
@@ -44,6 +38,8 @@ nmap <leader>rn <action>(RenameElement)
 map <leader>sv <action>(SplitVertically)
 "Split down
 map <leader>ss <action>(SplitHorizontally)
+"Tab
+map <leader>op <action>(MoveEditorToOppositeTabGroup)
 
 map <leader>fs <action>(FindInPath)
 map <leader>ps <action>(GotoFile)
@@ -57,3 +53,6 @@ nmap zx <action>(ExpandRegion)
 " Delete
 nnoremap d "_d
 vnoremap d "_d
+" Selection
+map <S-Up> <action>(EditorUpWithSelection)
+map <S-Down> <action>(EditorDownWithSelection)
