@@ -105,3 +105,5 @@ nnoremap d "_d
 vnoremap d "_d
 " No highlight
 nnoremap <Leader>nh :noh<CR>
+" Format JSON
+nnoremap <Leader>json :%!jq .<CR>

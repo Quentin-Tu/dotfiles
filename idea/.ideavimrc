@@ -40,6 +40,7 @@ map <leader>sv <action>(SplitVertically)
 map <leader>ss <action>(SplitHorizontally)
 "Tab
 map <leader>op <action>(MoveEditorToOppositeTabGroup)
+map <leader>pn <action>(PinActiveTabToggle)
 
 map <leader>fs <action>(FindInPath)
 map <leader>ps <action>(GotoFile)
